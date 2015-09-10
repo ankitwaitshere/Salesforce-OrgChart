@@ -7,4 +7,3 @@ var apiProxyRoutes = require( './apiProxyRoutes' ).routes;
  * @type {Array}
  */
 module.exports = staticRoutes.concat( authRoutes ).concat( apiProxyRoutes );
-;

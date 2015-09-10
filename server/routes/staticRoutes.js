@@ -3,7 +3,7 @@ var Config = require( '../../config' );
 
 var route = {
     method: 'GET',
-    path: '/public/{param*}',
+    path: '/dist/{param*}',
     handler: {
         directory: {
             path: './dist',

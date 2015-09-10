@@ -49,9 +49,9 @@ module.exports = function (grunt) {
                 length: 8
             },
             assets: {
-                src: 'dist/{fonts,js,css,images}/*.{jpg,jpeg,gif,png,webp,css,js,woff}'
-                , dest: 'dist/compiled'
-                , filter: function(src){
+                src: 'dist/{fonts,js,css,images}/*.{jpg,jpeg,gif,png,webp,css,js,woff}',
+                dest: 'dist/compiled',
+                filter: function(src){
                     return src.indexOf('<%= filerev.assets.dest %>') < 0;
                 }
             }

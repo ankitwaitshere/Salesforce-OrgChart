@@ -10,8 +10,8 @@
     <meta http-equiv="cleartype" content="on">
 
     <% if(config.isDevelopment()){ %>
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-    <% } else { var path = assetManifest[ 'public/css/style.css' ]; %>
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+    <% } else { var path = assetManifest[ 'dist/css/style.css' ]; %>
     <link rel="stylesheet" type="text/css" href="<%= '/' + path %>">
     <% } %>
 
@@ -50,8 +50,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
 
 <% if(config.isDevelopment()){ %>
-<script src="../public/js/bundle.js"></script>
-<% } else { var jsPath = assetManifest[ 'public/js/bundle.js' ]; %>
+<script src="../dist/js/bundle.js"></script>
+<% } else { var jsPath = assetManifest[ 'dist/js/bundle.js' ]; %>
 <script src="<%= '/' + jsPath %>"></script>
 <% } %>
 
