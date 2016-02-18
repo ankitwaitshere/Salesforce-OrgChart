@@ -1,6 +1,10 @@
 # Salesforce Org Chart: Local Set-up
 ###### Salesforce Org Chart is web application that is being designed to run as a SF1 canvas app. This read me is a tutorial for setting up and running Org Chart locally. Please note, that this guide assumes that you already have Org Chart running on heroku.
 
+If you do not have the Org Chart running on Heroku yet, please install this appexchange package to your Salesforce Org and follow the post installation instructions:
+
+https://appexchange.salesforce.com/listingDetail?listingId=a0N30000000rFyZEAU
+
 + [Prepare The App](README.md#Prepare)
 + [Building](README.md#Building)
 + [Local Back-up](README.md#Local)
