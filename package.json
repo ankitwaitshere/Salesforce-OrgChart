@@ -18,6 +18,9 @@
     "type": "git",
     "url": "https://git.soma.salesforce.com/PDXBrewHub/org-chart-client.git"
   },
+  "engines": {
+    "node": "0.12.7"
+  },
   "browserify-shim": {
     "./app/vendor/canvas-all.js": "Sfdc.canvas"
   },
