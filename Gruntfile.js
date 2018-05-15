@@ -9,7 +9,7 @@ if (!Config.isDevelopment()) {
     buildJSTasks.push('compress');
 }
 
-var buildCSSTasks = ['less', 'autoprefixer', 'purifycss'];
+var buildCSSTasks = ['less', 'autoprefixer'];
 if(!Config.isDevelopment()){
     buildCSSTasks.push('cssmin');
 }
