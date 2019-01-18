@@ -5,7 +5,7 @@ var connectionString = process.env.DATABASE_URL;
 function getConfig( callback ) {
     console.log( 'Retrieving the org chart config' );
     var hierarchyType = null;
-    pg.connect( connectionString, function ( err, client, done ) {
+    pg.connect( { connectionString, ssl: true }, function ( err, client, done ) {
         if ( err )
             console.log( err );
 

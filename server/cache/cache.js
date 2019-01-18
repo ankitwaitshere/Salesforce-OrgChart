@@ -15,7 +15,7 @@ var prime = function ( config, callback ) {
 
     var tempUsers = [];
 
-    pg.connect( connectionString, function ( err, client, done ) {
+    pg.connect( { connectionString, ssl: true }, function ( err, client, done ) {
         if ( err ) {
             console.log( err );
         }
